@@ -17,7 +17,7 @@ As the interactions with the environment was reflected in the metabolic networks
 
 - Confidence: seed set's confidnece score higher than this threshold is take into subsequent analyis.
 
-- Seed color:the color of the seed set to show in the right main panel, default is red. All strings starting with ‘#’ are assumed to be RGB color specifications. If you don't want (some) vertices to have any color, supply NA as the color name. 
+- Seed color:the color of the seed set to show in the right main panel, default is red. All strings starting with "\#" are assumed to be RGB color specifications. If you don't want (some) vertices to have any color, supply NA as the color name. 
 
 - Ignore all nodes except those in the giant component: selecting the only main largest component (connected set of nodes) of the network. All smaller components will be ignored. This is a good option for networks with a dominant component.
 
@@ -27,7 +27,7 @@ As the interactions with the environment was reflected in the metabolic networks
 
 - vertex size: the node size of the network, all node sizes must be strictly positive default is 3; 
 
-- vertex.color : the color of the node, default value is blue. All strings starting with ‘#’ are assumed to be RGB color specifications. If you don't want (some) vertices to have any color, supply NA as the color name.
+- vertex.color : the color of the node, default value is blue. All strings starting with "\#" are assumed to be RGB color specifications. If you don't want (some) vertices to have any color, supply NA as the color name.
 
 - arrow size: the size of the arrows for directed network edges, in points. Defaults to 0 (no arrows)..
 
