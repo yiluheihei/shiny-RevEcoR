@@ -1,0 +1,18 @@
+.shiny-progress .progress.text .progress-message{
+  position : absolute;
+  right : 40% !important;
+  height : 30px !important;
+  top: 50% !important;
+}
+
+.shiny-progress .progress-text {
+  position : absolute;
+  right : 40% !important;
+  height : 30px !important;
+  margin-top: 25% !important;
+  width : 300px !important;
+}
+
+img{
+  width : 700px !important;
+}
