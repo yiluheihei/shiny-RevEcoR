@@ -27,7 +27,7 @@ install_not_available  <- function(pkg){
   }
 }
 
-depend.packages  <- c("plyr","shiny","rmarkdown","markdown",
+depend.packages  <- c("plyr","shiny","shinythemes","markdown","magrittr",
   'GGally','svglite','intergraph', 'RevEcoR','network','igraph','ggplot2')
 
 install_not_available(depend.packages)

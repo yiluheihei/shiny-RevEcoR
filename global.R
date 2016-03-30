@@ -10,7 +10,6 @@ library(intergraph)
 library(network)
 library(igraph)
 library(ggplot2)
-
 ################################################################################
 # Source code from shiy-phyloseq
 # Special variant of numericInput() that has a smaller default width,
