@@ -70,6 +70,5 @@ version 0.1.1 2016.3.25
 - Remove BSI score.
 - Attach a video for how to use **shiny-RevEcoR**
 
-[another md](inputdata.md)
 
 

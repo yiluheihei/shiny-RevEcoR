@@ -1,12 +1,14 @@
+source('install.R', local = TRUE)
+## data 
+load("data/RefDbcache.rda")
+load("data/anno.species.rda")
+
+
 # This is the server logic for a Shiny web application.
 # You can find out more about building applications with Shiny here:
 #
 # http://shiny.rstudio.com
 #
-##==============================================================================
-## library the basic packages and load the reference metabolic data
-##==============================================================================
-source("install.R", local = TRUE)
 
 ## validata error message
 no_data <- function(sample.input, upload.input){

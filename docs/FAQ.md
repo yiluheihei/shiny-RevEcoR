@@ -32,6 +32,12 @@ Reverse Ecology uses genomics to study community ecology with no a priori assump
 
 ### Q5. Which operating system it is tested on?
 
-**A:** x86_64-apple-darwin13.4.0 (64-bit), see the `SessionInfo` in help page for more details.
+**A:** 
+```
+R version 3.2.4 Revised (2016-03-16 r70336)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows >= 8 x64 (build 9200)
+```
+see the `SessionInfo` in help page for more details.
 
 

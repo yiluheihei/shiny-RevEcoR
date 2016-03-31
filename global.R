@@ -1,15 +1,4 @@
-# load require packages ---------------------------------------------------
-library(shiny)
-library(shinythemes)
-library(RevEcoR)
-library(GGally)
-library(magrittr)
-library(svglite)
-library(plyr)
-library(intergraph)
-library(network)
-library(igraph)
-library(ggplot2)
+source("install.R", local = TRUE)
 ################################################################################
 # Source code from shiy-phyloseq
 # Special variant of numericInput() that has a smaller default width,
@@ -54,7 +43,3 @@ net_gaint_component  <- function(g){
     which.max
   return(decomposed.component[[gaint.component.index]])
 }
-
-## data 
-load("data/RefDbcache.rda")
-load("data/anno.species.rda")

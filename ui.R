@@ -1,4 +1,6 @@
 # share sidebar -----------------------------------------------------------
+library(shiny)
+library(shinythemes)
 
 shared_sidebar <- function(){
   column(width = 3, 
@@ -331,5 +333,3 @@ shinyUI(navbarPage(theme = shinytheme("flatly"),"shiny-RevEcoR",
   ),
   collapsible = TRUE
 ))
-
-sessionInfo()
