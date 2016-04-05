@@ -1,10 +1,10 @@
 {
     "dialog-state" : {
-        "caseSensitive" : true,
+        "caseSensitive" : false,
         "filePatterns" : [
         ],
         "path" : "~/Desktop/work/Shiny-RevEcoR2",
-        "query" : "sna",
+        "query" : "RevEcoR",
         "regex" : false
     }
 }

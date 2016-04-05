@@ -31,15 +31,3 @@ textInputRow <- function(inputId, label, value = "", class="form-control", ...){
     tags$label(label, `for` = inputId), 
     tags$input(id = inputId, type = "text", value = value, class=class, ...))
 }
-
-##============================================================================
-## [Function]  gaint connected componets of network
-##============================================================================
-net_gaint_component  <- function(g){
-  decomposed.component  <- decompose.graph(g)
-  gaint.component.index  <- llply(decomposed.component, 
-    function(x)V(x)$name) %>%
-    laply(length) %>%
-    which.max
-  return(decomposed.component[[gaint.component.index]])
-}

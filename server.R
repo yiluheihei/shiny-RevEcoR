@@ -1,15 +1,23 @@
-source('install.R', local = TRUE)
-## data 
+##source('install.R', local = TRUE)
+## load required packages
+library(shiny)
+library(shinythemes)
+library(RevEcoR)
+library(GGally)
+library(magrittr)
+library(svglite)
+library(plyr)
+library(intergraph)
+library(network)
+library(igraph)
+library(ggplot2)
 load("data/RefDbcache.rda")
 load("data/anno.species.rda")
 
 
-# This is the server logic for a Shiny web application.
-# You can find out more about building applications with Shiny here:
-#
-# http://shiny.rstudio.com
-#
-
+##============================================================================
+##                          [Function]  
+##============================================================================
 ## validata error message
 no_data <- function(sample.input, upload.input){
   if (!sample.input && is.null(upload.input))

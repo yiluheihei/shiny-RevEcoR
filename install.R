@@ -15,41 +15,11 @@ if(compareVersion(R.version, R.min.version) < 0){
 ##==============================================================================
 ## Install the basic required packages if not available/installed
 ##==============================================================================
-
-install_not_available  <- function(pkg){
-  installed.packges = .packages(all.available = TRUE)
-  if(any(!pkg %in% installed.packges)){
-    source("http://bioconductor.org/biocLite.R")
-    for(i in pkg[!pkg %in% installed.packges]){
-      message("Installing ", i, " package using biocLite... \n")
-      biocLite(i,suppressUpdates = '.*')
-    }
-  }
-}
-
 depend.packages  <- c("plyr","shiny","shinythemes","markdown","magrittr",
-  'GGally','svglite','intergraph','network','igraph','ggplot2','sna','devtools')
-
-install_not_available(depend.packages)
-
-## install the dev version of RevEcoR
-if (!require(RevEcoR)){
-  devtools::install_github('yiluheihei/RevEcoR')
-}else {
-  revecor.version <- packageVersion('RevEcoR')
-  if (compareVersion('0.99.3', as.character(revecor.version))){
-    devtools::install_github('yiluheihei/RevEcoR')
-  }
-}
-
-library(shiny)
-library(shinythemes)
-library(RevEcoR)
-library(GGally)
-library(magrittr)
-library(svglite)
-library(plyr)
-library(intergraph)
-library(network)
-library(igraph)
-library(ggplot2)
+  'GGally','svglite','intergraph','network','igraph','ggplot2',
+  'sna','devtools','RevEcoR')
+all.packages = .packages(all.available = TRUE)
+not_installed_pkg <- match(depend.packages, all.packages, nomatch = 0)
+not_installed_pkg <- depend.packages[not_installed_pkg == 0]
+if (length(not_installed_pkg))
+  install.packages(not_installed_pkg)
