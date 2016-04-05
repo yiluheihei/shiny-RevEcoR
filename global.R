@@ -1,4 +1,4 @@
-source("install.R", local = TRUE)
+##source("install.R", local = TRUE)
 ################################################################################
 # Source code from shiy-phyloseq
 # Special variant of numericInput() that has a smaller default width,
